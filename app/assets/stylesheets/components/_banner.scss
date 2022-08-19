@@ -1,8 +1,9 @@
 .banner-list {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding: 150px 0;
   height: 100px;
+  filter: grayscale(100%);
 }
 
 .banner-list h1 {

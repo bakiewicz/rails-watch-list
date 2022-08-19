@@ -1,8 +1,8 @@
 <div class="form-box">
   <%= simple_form_for [@list, @bookmark] do |f| %>
-    <%= f.label :list %>
-    <%= f.input :comment %>
+    <%= f.label @list.name %>
     <%= f.association :movie %>
+    <%= f.input :comment %>
     <%= f.button :submit %>
   <% end %>
 </div>
