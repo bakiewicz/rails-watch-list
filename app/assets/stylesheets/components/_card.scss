@@ -18,10 +18,10 @@
   position: relative;
 }
 
-.card-category > h2 {
+.card-category h2 {
   position: absolute;
   top: 50px;
-  transform: translateY(-50%);
+  align-self: center;
 }
 
 .card-category .card-category-delete {
@@ -34,4 +34,11 @@
 .card-category a {
   text-decoration: none;
   color: white;
+}
+
+.card-category .btn-more-info {
+  position: absolute;
+  right: 200px;
+  top: 130px;
+  width: 30px;
 }

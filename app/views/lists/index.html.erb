@@ -3,12 +3,11 @@
 </div>
 <div class="cards">
   <% @lists.each do |list| %>
-
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
-      <h2><%= link_to list.name, list_path(list) %></h2>
+      <h2><%= list.name %></h2>
+      <%= link_to ('<i class="fa-solid fa-plus"></i>').html_safe, list_path(list.id), class: 'btn-more-info' %>
       <%= link_to ('<i class="fa-solid fa-trash-can"></i>').html_safe, list_path(list.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-category-delete" %>
     </div>
-
   <% end %>
 </div>
 <br>

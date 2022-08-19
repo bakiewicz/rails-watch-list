@@ -1,5 +1,6 @@
 class List < ApplicationRecord
   has_many :bookmarks
+  has_many :reviews
   has_many :movies, through: :bookmarks
   has_one_attached :photo
 
